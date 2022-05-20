@@ -1,8 +1,8 @@
 import { Router } from 'express';
+import { getQuestions } from '../../controllers';
 
 const router = Router();
 
-router.post('/login');
-router.post('/sign-up');
+router.get('/', getQuestions);
 
 export default router;

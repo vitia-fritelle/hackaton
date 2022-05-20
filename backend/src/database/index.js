@@ -1,4 +1,4 @@
 import { MongoClient } from 'mongodb';
 import config from '../config';
-
-export default new MongoClient(config.mongodb_url);
+const mongo = new MongoClient(config.mongodb_url);
+export default mongo; 

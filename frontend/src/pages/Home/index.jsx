@@ -1,6 +1,6 @@
 function Home () {
     return (
-        null
+        <h1>Hello world!</h1>
     );
 };
 

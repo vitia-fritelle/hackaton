@@ -25,9 +25,7 @@
 		}
 	],
 	"bugs": {
-		"url": "https://github.com/vitia-fritelle/boot-store/issues"
 	},
-	"homepage": "https://github.com/vitia-fritelle/boot-store#readme",
 	"license": "UNLICENSED",
 	"dependencies": {
 		"axios": "^0.27.2",
@@ -64,9 +62,6 @@
 	},
 	"eslintConfig": {
 		"rules": {
-			"indent": [
-				"error",4
-			]
 		},
 		"parserOptions": {
 			"sourceType": "module",

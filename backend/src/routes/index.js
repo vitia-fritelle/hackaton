@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import questionRoutes from './questionRoutes';
+import scoreRoutes from './scoreRoutes';
 
 const router = Router();
 
@@ -7,6 +8,10 @@ const routes = [
     {
         path: '/question',
         route: questionRoutes,
+    },
+    {
+        path: '/score',
+        route: scoreRoutes,
     },
 ];
 

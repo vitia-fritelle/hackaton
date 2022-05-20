@@ -3,6 +3,6 @@ import { getQuestions } from '../../controllers';
 
 const router = Router();
 
-router.get('/', getQuestions);
+router.get('/:collection', getQuestions);
 
 export default router;

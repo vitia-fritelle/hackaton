@@ -1,12 +1,12 @@
-import mongo from '../database';
+import mongo from '../../database';
 
-export const getQuestions = async (req, res) => {
+export const getMovies = async (req, res) => {
     try {
-        let questions;
-        const { collection } = req.params;
+        let movies;
+        const collection = 'VideoCollection';
         if (req.query.hasOwnProperty('limit')) {
             const { limit } = req.query;
-            questions = (
+            movies = (
                 await mongo
                     .db('Hackathon02')
                     .collection(collection)
@@ -15,7 +15,7 @@ export const getQuestions = async (req, res) => {
                     .toArray()
             );
         } else {
-            questions = (
+            movies = (
                 await mongo
                     .db('Hackathon02')
                     .collection(collection)
@@ -23,11 +23,11 @@ export const getQuestions = async (req, res) => {
                     .toArray()
             );
         }
-        return res.status(200).send(questions);
+        return res.status(200).send(movies);
     } catch (e) {
         console.log(e);
         return res.status(500).send(e);
     }
 };
 
-export const postQuestions = () => {};
+export const postMovies = () => {};

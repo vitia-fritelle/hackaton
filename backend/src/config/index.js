@@ -25,10 +25,12 @@ if (error) {
     throw new Error(`Config validation error: ${error.message}`);
 }
 
-export default {
+const config = {
     env: envVars.NODE_ENV,
     port: envVars.PORT,
     mongodb_url: envVars.MONGODB_URL,
     secret_key: process.env.SECRET_KEY,
     sendgrid_key: process.env.SENDGRID_API_KEY,
 };
+
+export default config;

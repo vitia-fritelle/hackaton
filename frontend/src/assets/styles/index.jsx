@@ -6,13 +6,16 @@ export default createGlobalStyle`
     * {
         box-sizing: border-box;
         text-decoration: none;
+        padding: 0;
+        margin: 0;
+
     }
     html, body, #root {
-        height: 100vh;
-        width: 100vw;
-        font-family: 'Inter', sans-serif;
-        font-family: 'DM Serif Display', serif;
+        height: 100%;
+        width: 100%;
+        background-color: #0062E3;    
     }
+
     :root {
             --fonte-primaria: 'Inter', sans-serif;  
             --fonte-secundaria: 'DM Serif Display', serif;

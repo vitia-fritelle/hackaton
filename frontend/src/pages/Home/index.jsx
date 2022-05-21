@@ -1,7 +1,13 @@
+import styled from 'styled-components';
+
 function Home () {
     return (
-        <h1>Hello world!</h1>
+        <Teste>Hello world!</Teste>
     );
 };
+
+const Teste = styled.div`
+color: var(--cor-terciaria);
+`
 
 export default Home

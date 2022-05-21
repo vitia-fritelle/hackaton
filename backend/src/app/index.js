@@ -2,7 +2,6 @@ import express, { urlencoded, json } from 'express';
 import mongoSanitize from 'express-mongo-sanitize';
 import compression from 'compression';
 import cors from 'cors';
-import csurf from 'csurf';
 import helmet from 'helmet';
 import routes from '../routes';
 
@@ -14,7 +13,6 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(mongoSanitize());
 app.use(compression());
-app.use(csurf());
 app.use(cors());
 app.use(routes);
 export default app;

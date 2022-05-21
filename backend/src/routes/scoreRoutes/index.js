@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { getScore, postScore } from '../../controllers/scoreControllers.js';
+import { getScore, postScore } from '../../controllers/scoreControllers';
 
 const router = Router();
 

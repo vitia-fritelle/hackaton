@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import questionRoutes from './questionRoutes';
 import scoreRoutes from './scoreRoutes';
+import movieRoutes from './movieRoutes';
 
 const router = Router();
 
@@ -12,6 +13,10 @@ const routes = [
     {
         path: '/score',
         route: scoreRoutes,
+    },
+    {
+        path: '/movie',
+        route: movieRoutes,
     },
 ];
 

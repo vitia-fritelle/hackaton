@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import {useState} from "react";
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const URL = "https://hackathon02.herokuapp.com/question";
 
@@ -38,7 +39,9 @@ export default function TelaInicialDePerguntas() {
         
         alt={'tema'}
         />
-        
+        <Link to={'/'}>
+        <ion-icon name="reload-circle"/>
+        </Link>
       </Wrapper>
     </>
   )
@@ -63,6 +66,13 @@ img{
   margin-top: 20px;
   width: 200px;
   height: auto;
+  cursor: pointer;
+}
+ion-icon{
+  margin-top: 14px;
+  font-size: 46px;
+  color: var(--cor-terciaria);
+  cursor: pointer;
 }
 
 `

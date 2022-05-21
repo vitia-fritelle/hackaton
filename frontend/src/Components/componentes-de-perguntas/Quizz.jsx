@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
 
-export default function Quizz({question}){
+export default function Quizz({question, index}){
   return (
     <QuizzContainer>
-      <h1>Pergunta 1:</h1>
+      <h1>Pergunta {index + 1}:</h1>
       <h2>{question}</h2>
     </QuizzContainer>
     )
 }
 
 const QuizzContainer = styled.div`
-margin-top: 20px;
+margin-top: 60px;
 background-color: var(--cor-secundaria);
 margin-left: 30px;
 margin-right: 30px;

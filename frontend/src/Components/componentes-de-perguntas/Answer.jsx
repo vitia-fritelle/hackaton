@@ -3,9 +3,14 @@ import styled from 'styled-components';
 
 
 
-export default function Answer({question, isCorrect, reveal, setReveal}) {
+export default function Answer({question, isCorrect, reveal, setReveal, score, setScore}) {
   return (
-    <AnswerContainer onClick={()=> setReveal(true)}>
+    <AnswerContainer onClick={()=> {
+      setReveal(true)
+      if(isCorrect){
+        setScore(score++)
+      }
+    }}>
       <h1>{question}</h1>
       {reveal&&<Icon isCorrect={isCorrect}/>}
     </AnswerContainer>
@@ -30,7 +35,7 @@ const AnswerContainer = styled.div`
   margin-left: 30px;
   margin-right: 30px;
   border-radius: 6px;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
   border: 1px solid var(--cor-terciaria);
   display: flex;

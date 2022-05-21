@@ -41,6 +41,7 @@ export default function TelaInicialDePerguntas() {
         />
         <Link to={'/'}>
         <ion-icon name="reload-circle"/>
+        
         </Link>
       </Wrapper>
     </>
@@ -61,6 +62,7 @@ h1{
   background-color: var(--cor-secundaria);
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 img{
   margin-top: 20px;
@@ -74,5 +76,4 @@ ion-icon{
   color: var(--cor-terciaria);
   cursor: pointer;
 }
-
 `

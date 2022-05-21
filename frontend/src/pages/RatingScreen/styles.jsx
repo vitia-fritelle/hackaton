@@ -2,21 +2,23 @@ import styled from 'styled-components';
 
 export const RatingContainer = styled.div`
 	h2 {
+		margin-top: 20px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-family: var(--fonte-primaria);
-		color: var(--cor-primaria);
+		color: var(--cor-terciaria);
 		font-size: 30px;
 		font-weight: bold;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
+		text-shadow: 2px 0 0 var(--cor-secundaria);
 	}
 
 	p {
 		font-family: var(--fonte-primaria);
 		font-size: 20px;
 		font-weight: bold;
-		color: var(--cor-terciaria);
+		color: var(--cor-secundaria);
 	}
 
 	.data_user {
@@ -41,7 +43,7 @@ export const UserContainer = styled.div`
 
 	.position {
 		margin-left: 10px;
-		color: var(--cor-primaria);
+		color: var(--cor-secundaria);
 	}
 
 	.score {

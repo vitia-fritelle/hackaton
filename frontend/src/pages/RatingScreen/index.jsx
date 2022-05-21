@@ -2,6 +2,7 @@ import {RatingContainer, UserContainer} from './styles';
 import {useState} from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import Header from './../../Components/componentes-de-perguntas/Header';
 
 function RatingScreen() {
 	const [data, setData] = useState([
@@ -57,6 +58,7 @@ function RatingScreen() {
 
 	return (
 		<RatingContainer>
+			<Header />
 			<h2>Ranking Usuários</h2>
 			{data.map((user, index) => (
 				<UserContainer key={user._id}>

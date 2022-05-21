@@ -9,7 +9,6 @@ function App() {
 		<>
 			<GlobalStyle />
 			<Routes>
-				<Route path="/" element={<Home />} />
 				<Route path="/perguntas" element={<Perguntas />} />
 				<Route path="/teste" element={<TelaInicialDePerguntas />} />
 				<Route path="/pontuacao" element={<RatingScreen />} />

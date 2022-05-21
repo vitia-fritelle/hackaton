@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 import reset from 'styled-reset';
 
 export default createGlobalStyle`
@@ -15,11 +15,12 @@ export default createGlobalStyle`
         width: 100%;
         background-color: #0062E3;    
     }
+
     :root {
-        --fonte-primaria: 'Inter', sans-serif;  
-        --fonte-secundaria: 'DM Serif Display', serif;
-        --cor-primaria: #0062E3;
-        --cor-secundaria: #FFF;
-        --cor-terciaria: #FF4791;
+            --fonte-primaria: 'Inter', sans-serif;  
+            --fonte-secundaria: 'DM Serif Display', serif;
+            --cor-primaria: #0062E3;
+            --cor-secundaria: #FFF;
+            --cor-terciaria: #FF4791;
     }
 `;

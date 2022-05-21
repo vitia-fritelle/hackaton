@@ -4,9 +4,14 @@ import Quizz from './componentes-de-perguntas/Quizz'
 import Answer from './componentes-de-perguntas/Answer'
 import Button from './componentes-de-perguntas/Button'
 import { useState } from 'react'
+import axios from 'axios'
+import { useEffect } from 'react'
 
 
 export default function Testes() {
+
+  // useEffect({},[])
+
 
   const mockObject = {
     "_id":{"$oid":"62880afb6edca75ff3ba1c8c"},
@@ -19,7 +24,7 @@ export default function Testes() {
       
       {"Answer":"Uma versão do JavaScript.","isCorrect":false},
       
-      {"Answer":"Um transpilador de JavaScrip","isCorrect":false},
+      {"Answer":"Um transpilador de JavaScript.","isCorrect":false},
       
       {"Answer":"Um ambiente de execução de JavaScript.","isCorrect":true}
     ]

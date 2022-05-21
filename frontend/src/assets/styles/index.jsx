@@ -6,10 +6,20 @@ export default createGlobalStyle`
     * {
         box-sizing: border-box;
         text-decoration: none;
+        padding: 0;
+        margin: 0;
+
     }
     html, body, #root {
-        height: 100vh;
-        width: 100vw;
-        background-color: red;
+        height: 100%;
+        width: 100%;
+        background-color: #0062E3;    
+    }
+    :root {
+        --fonte-primaria: 'Inter', sans-serif;  
+        --fonte-secundaria: 'DM Serif Display', serif;
+        --cor-primaria: #0062E3;
+        --cor-secundaria: #FFF;
+        --cor-terciaria: #FF4791;
     }
 `;
